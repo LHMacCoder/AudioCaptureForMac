@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88F50E97268187CB00738E2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F50E96268187CB00738E2B /* AppDelegate.m */; };
+		88F50E9A268187CB00738E2B /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 88F50E99268187CB00738E2B /* ViewController.mm */; };
+		88F50E9C268187D000738E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F50E9B268187D000738E2B /* Assets.xcassets */; };
+		88F50E9F268187D000738E2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F50E9D268187D000738E2B /* Main.storyboard */; };
+		88F50EA2268187D000738E2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F50EA1268187D000738E2B /* main.m */; };
+		88F50EAB2681898500738E2B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F50EAA2681898500738E2B /* AVFoundation.framework */; };
+		88F50EAD2681899E00738E2B /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F50EAC2681899E00738E2B /* SDL2.framework */; };
+		88F50EB7268189A700738E2B /* libswresample.4.0.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F50EAE268189A700738E2B /* libswresample.4.0.100.dylib */; };
+		88F50EB8268189A700738E2B /* libavcodec.59.1.101.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F50EAF268189A700738E2B /* libavcodec.59.1.101.dylib */; };
+		88F50EB9268189A700738E2B /* libavdevice.59.0.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F50EB0268189A700738E2B /* libavdevice.59.0.100.dylib */; };
+		88F50EBA268189A700738E2B /* libavutil.57.0.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F50EB1268189A700738E2B /* libavutil.57.0.100.dylib */; };
+		88F50EBB268189A700738E2B /* libavfilter.8.0.101.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F50EB2268189A700738E2B /* libavfilter.8.0.101.dylib */; };
+		88F50EBC268189A700738E2B /* libavformat.59.2.101.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F50EB3268189A700738E2B /* libavformat.59.2.101.dylib */; };
+		88F50EBD268189A700738E2B /* libpostproc.56.0.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F50EB4268189A700738E2B /* libpostproc.56.0.100.dylib */; };
+		88F50EBE268189A700738E2B /* liblzma.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F50EB5268189A700738E2B /* liblzma.5.dylib */; };
+		88F50EBF268189A700738E2B /* libswscale.6.0.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F50EB6268189A700738E2B /* libswscale.6.0.100.dylib */; };
+		88F50EC1268189B900738E2B /* libavcodec.59.1.101.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88F50EAF268189A700738E2B /* libavcodec.59.1.101.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		88F50EC2268189B900738E2B /* libavdevice.59.0.100.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88F50EB0268189A700738E2B /* libavdevice.59.0.100.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		88F50EC3268189B900738E2B /* libavfilter.8.0.101.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88F50EB2268189A700738E2B /* libavfilter.8.0.101.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		88F50EC4268189B900738E2B /* libavformat.59.2.101.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88F50EB3268189A700738E2B /* libavformat.59.2.101.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		88F50EC5268189B900738E2B /* libavutil.57.0.100.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88F50EB1268189A700738E2B /* libavutil.57.0.100.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		88F50EC6268189B900738E2B /* liblzma.5.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88F50EB5268189A700738E2B /* liblzma.5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		88F50EC7268189B900738E2B /* libpostproc.56.0.100.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88F50EB4268189A700738E2B /* libpostproc.56.0.100.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		88F50EC8268189B900738E2B /* libswresample.4.0.100.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88F50EAE268189A700738E2B /* libswresample.4.0.100.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		88F50EC9268189B900738E2B /* libswscale.6.0.100.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88F50EB6268189A700738E2B /* libswscale.6.0.100.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		88F50ECE26818B5F00738E2B /* AudioPCMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F50ECD26818B5F00738E2B /* AudioPCMObject.m */; };
+		88F50ED226818BB800738E2B /* ACConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F50ED126818BB800738E2B /* ACConstant.m */; };
+		88F50ED526818C3300738E2B /* FFmpegRecord.mm in Sources */ = {isa = PBXBuildFile; fileRef = 88F50ED426818C3300738E2B /* FFmpegRecord.mm */; };
+		88F50ED826818D4000738E2B /* PlayerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 88F50ED726818D4000738E2B /* PlayerViewController.mm */; };
+		88F50ED926818F0900738E2B /* SDL2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88F50EAC2681899E00738E2B /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		88F50EC0268189AE00738E2B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				88F50ED926818F0900738E2B /* SDL2.framework in CopyFiles */,
+				88F50EC1268189B900738E2B /* libavcodec.59.1.101.dylib in CopyFiles */,
+				88F50EC2268189B900738E2B /* libavdevice.59.0.100.dylib in CopyFiles */,
+				88F50EC3268189B900738E2B /* libavfilter.8.0.101.dylib in CopyFiles */,
+				88F50EC4268189B900738E2B /* libavformat.59.2.101.dylib in CopyFiles */,
+				88F50EC5268189B900738E2B /* libavutil.57.0.100.dylib in CopyFiles */,
+				88F50EC6268189B900738E2B /* liblzma.5.dylib in CopyFiles */,
+				88F50EC7268189B900738E2B /* libpostproc.56.0.100.dylib in CopyFiles */,
+				88F50EC8268189B900738E2B /* libswresample.4.0.100.dylib in CopyFiles */,
+				88F50EC9268189B900738E2B /* libswscale.6.0.100.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		88F50E92268187CB00738E2B /* AudioCaptureForMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioCaptureForMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F50E95268187CB00738E2B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		88F50E96268187CB00738E2B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		88F50E98268187CB00738E2B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		88F50E99268187CB00738E2B /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		88F50E9B268187D000738E2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88F50E9E268187D000738E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88F50EA0268187D000738E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88F50EA1268187D000738E2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		88F50EA3268187D000738E2B /* AudioCaptureForMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AudioCaptureForMac.entitlements; sourceTree = "<group>"; };
+		88F50EAA2681898500738E2B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		88F50EAC2681899E00738E2B /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = AudioCaptureForMac/ffmpeg/lib/SDL2.framework; sourceTree = "<group>"; };
+		88F50EAE268189A700738E2B /* libswresample.4.0.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswresample.4.0.100.dylib; path = AudioCaptureForMac/ffmpeg/lib/libswresample.4.0.100.dylib; sourceTree = "<group>"; };
+		88F50EAF268189A700738E2B /* libavcodec.59.1.101.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.59.1.101.dylib; path = AudioCaptureForMac/ffmpeg/lib/libavcodec.59.1.101.dylib; sourceTree = "<group>"; };
+		88F50EB0268189A700738E2B /* libavdevice.59.0.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavdevice.59.0.100.dylib; path = AudioCaptureForMac/ffmpeg/lib/libavdevice.59.0.100.dylib; sourceTree = "<group>"; };
+		88F50EB1268189A700738E2B /* libavutil.57.0.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.57.0.100.dylib; path = AudioCaptureForMac/ffmpeg/lib/libavutil.57.0.100.dylib; sourceTree = "<group>"; };
+		88F50EB2268189A700738E2B /* libavfilter.8.0.101.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavfilter.8.0.101.dylib; path = AudioCaptureForMac/ffmpeg/lib/libavfilter.8.0.101.dylib; sourceTree = "<group>"; };
+		88F50EB3268189A700738E2B /* libavformat.59.2.101.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.59.2.101.dylib; path = AudioCaptureForMac/ffmpeg/lib/libavformat.59.2.101.dylib; sourceTree = "<group>"; };
+		88F50EB4268189A700738E2B /* libpostproc.56.0.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpostproc.56.0.100.dylib; path = AudioCaptureForMac/ffmpeg/lib/libpostproc.56.0.100.dylib; sourceTree = "<group>"; };
+		88F50EB5268189A700738E2B /* liblzma.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liblzma.5.dylib; path = AudioCaptureForMac/ffmpeg/lib/liblzma.5.dylib; sourceTree = "<group>"; };
+		88F50EB6268189A700738E2B /* libswscale.6.0.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.6.0.100.dylib; path = AudioCaptureForMac/ffmpeg/lib/libswscale.6.0.100.dylib; sourceTree = "<group>"; };
+		88F50ECC26818B5F00738E2B /* AudioPCMObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioPCMObject.h; sourceTree = "<group>"; };
+		88F50ECD26818B5F00738E2B /* AudioPCMObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioPCMObject.m; sourceTree = "<group>"; };
+		88F50ECF26818B9600738E2B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		88F50ED026818BB800738E2B /* ACConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACConstant.h; sourceTree = "<group>"; };
+		88F50ED126818BB800738E2B /* ACConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACConstant.m; sourceTree = "<group>"; };
+		88F50ED326818C3300738E2B /* FFmpegRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFmpegRecord.h; sourceTree = "<group>"; };
+		88F50ED426818C3300738E2B /* FFmpegRecord.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FFmpegRecord.mm; sourceTree = "<group>"; };
+		88F50ED626818D4000738E2B /* PlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		88F50ED726818D4000738E2B /* PlayerViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PlayerViewController.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88F50E8F268187CB00738E2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88F50EAB2681898500738E2B /* AVFoundation.framework in Frameworks */,
+				88F50EBB268189A700738E2B /* libavfilter.8.0.101.dylib in Frameworks */,
+				88F50EBF268189A700738E2B /* libswscale.6.0.100.dylib in Frameworks */,
+				88F50EBD268189A700738E2B /* libpostproc.56.0.100.dylib in Frameworks */,
+				88F50EBE268189A700738E2B /* liblzma.5.dylib in Frameworks */,
+				88F50EAD2681899E00738E2B /* SDL2.framework in Frameworks */,
+				88F50EB8268189A700738E2B /* libavcodec.59.1.101.dylib in Frameworks */,
+				88F50EB7268189A700738E2B /* libswresample.4.0.100.dylib in Frameworks */,
+				88F50EB9268189A700738E2B /* libavdevice.59.0.100.dylib in Frameworks */,
+				88F50EBA268189A700738E2B /* libavutil.57.0.100.dylib in Frameworks */,
+				88F50EBC268189A700738E2B /* libavformat.59.2.101.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88F50E89268187CB00738E2B = {
+			isa = PBXGroup;
+			children = (
+				88F50E94268187CB00738E2B /* AudioCaptureForMac */,
+				88F50E93268187CB00738E2B /* Products */,
+				88F50EA92681898500738E2B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		88F50E93268187CB00738E2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88F50E92268187CB00738E2B /* AudioCaptureForMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88F50E94268187CB00738E2B /* AudioCaptureForMac */ = {
+			isa = PBXGroup;
+			children = (
+				88F50ECB26818B3B00738E2B /* Controller */,
+				88F50ECA26818B3300738E2B /* Model */,
+				88F50E95268187CB00738E2B /* AppDelegate.h */,
+				88F50E96268187CB00738E2B /* AppDelegate.m */,
+				88F50E98268187CB00738E2B /* ViewController.h */,
+				88F50E99268187CB00738E2B /* ViewController.mm */,
+				88F50ED326818C3300738E2B /* FFmpegRecord.h */,
+				88F50ED426818C3300738E2B /* FFmpegRecord.mm */,
+				88F50ED026818BB800738E2B /* ACConstant.h */,
+				88F50ED126818BB800738E2B /* ACConstant.m */,
+				88F50E9B268187D000738E2B /* Assets.xcassets */,
+				88F50E9D268187D000738E2B /* Main.storyboard */,
+				88F50EA0268187D000738E2B /* Info.plist */,
+				88F50EA1268187D000738E2B /* main.m */,
+				88F50EA3268187D000738E2B /* AudioCaptureForMac.entitlements */,
+				88F50ECF26818B9600738E2B /* PrefixHeader.pch */,
+			);
+			path = AudioCaptureForMac;
+			sourceTree = "<group>";
+		};
+		88F50EA92681898500738E2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88F50EAF268189A700738E2B /* libavcodec.59.1.101.dylib */,
+				88F50EB0268189A700738E2B /* libavdevice.59.0.100.dylib */,
+				88F50EB2268189A700738E2B /* libavfilter.8.0.101.dylib */,
+				88F50EB3268189A700738E2B /* libavformat.59.2.101.dylib */,
+				88F50EB1268189A700738E2B /* libavutil.57.0.100.dylib */,
+				88F50EB5268189A700738E2B /* liblzma.5.dylib */,
+				88F50EB4268189A700738E2B /* libpostproc.56.0.100.dylib */,
+				88F50EAE268189A700738E2B /* libswresample.4.0.100.dylib */,
+				88F50EB6268189A700738E2B /* libswscale.6.0.100.dylib */,
+				88F50EAC2681899E00738E2B /* SDL2.framework */,
+				88F50EAA2681898500738E2B /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88F50ECA26818B3300738E2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88F50ECC26818B5F00738E2B /* AudioPCMObject.h */,
+				88F50ECD26818B5F00738E2B /* AudioPCMObject.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88F50ECB26818B3B00738E2B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				88F50ED626818D4000738E2B /* PlayerViewController.h */,
+				88F50ED726818D4000738E2B /* PlayerViewController.mm */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88F50E91268187CB00738E2B /* AudioCaptureForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88F50EA6268187D000738E2B /* Build configuration list for PBXNativeTarget "AudioCaptureForMac" */;
+			buildPhases = (
+				88F50E8E268187CB00738E2B /* Sources */,
+				88F50E8F268187CB00738E2B /* Frameworks */,
+				88F50E90268187CB00738E2B /* Resources */,
+				88F50EC0268189AE00738E2B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioCaptureForMac;
+			productName = AudioCaptureForMac;
+			productReference = 88F50E92268187CB00738E2B /* AudioCaptureForMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88F50E8A268187CB00738E2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = LHMacCoder;
+				TargetAttributes = {
+					88F50E91268187CB00738E2B = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 88F50E8D268187CB00738E2B /* Build configuration list for PBXProject "AudioCaptureForMac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88F50E89268187CB00738E2B;
+			productRefGroup = 88F50E93268187CB00738E2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88F50E91268187CB00738E2B /* AudioCaptureForMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88F50E90268187CB00738E2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88F50E9C268187D000738E2B /* Assets.xcassets in Resources */,
+				88F50E9F268187D000738E2B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88F50E8E268187CB00738E2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88F50ED826818D4000738E2B /* PlayerViewController.mm in Sources */,
+				88F50ECE26818B5F00738E2B /* AudioPCMObject.m in Sources */,
+				88F50E9A268187CB00738E2B /* ViewController.mm in Sources */,
+				88F50EA2268187D000738E2B /* main.m in Sources */,
+				88F50E97268187CB00738E2B /* AppDelegate.m in Sources */,
+				88F50ED226818BB800738E2B /* ACConstant.m in Sources */,
+				88F50ED526818C3300738E2B /* FFmpegRecord.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		88F50E9D268187D000738E2B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88F50E9E268187D000738E2B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88F50EA4268187D000738E2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		88F50EA5268187D000738E2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		88F50EA7268187D000738E2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AudioCaptureForMac/AudioCaptureForMac.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioCaptureForMac/ffmpeg/lib",
+				);
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/AudioCaptureForMac/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/AudioCaptureForMac/ffmpeg/include";
+				INFOPLIST_FILE = AudioCaptureForMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioCaptureForMac/ffmpeg/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LHMacCoder.AudioCaptureForMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		88F50EA8268187D000738E2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AudioCaptureForMac/AudioCaptureForMac.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioCaptureForMac/ffmpeg/lib",
+				);
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/AudioCaptureForMac/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/AudioCaptureForMac/ffmpeg/include";
+				INFOPLIST_FILE = AudioCaptureForMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioCaptureForMac/ffmpeg/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LHMacCoder.AudioCaptureForMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88F50E8D268187CB00738E2B /* Build configuration list for PBXProject "AudioCaptureForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88F50EA4268187D000738E2B /* Debug */,
+				88F50EA5268187D000738E2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88F50EA6268187D000738E2B /* Build configuration list for PBXNativeTarget "AudioCaptureForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88F50EA7268187D000738E2B /* Debug */,
+				88F50EA8268187D000738E2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88F50E8A268187CB00738E2B /* Project object */;
+}
