@@ -10,6 +10,7 @@
 #import "FFmpegRecord.h"
 #import "AudioPCMObject.h"
 #import "PlayerViewController.h"
+#import "ACFormatFactory.h"
 
 @interface TableCellView : NSTableCellView
 
@@ -111,6 +112,28 @@
             [self->_record avdeviceRegisterAll];
             [self->_record startRecord];
         });
+    }
+}
+- (IBAction)ouputWAVAciton:(id)sender {
+    NSUInteger index = _tableView.selectedRow;
+    if (index < 0 || index > _pcmArray.count) {
+        return ;
+    }
+    AudioPCMObject *obj = _pcmArray[index];
+    
+    WAVHeader header;
+    header.numChannels = 2;
+    header.sampleRate = 44100;
+    header.bitsPerSample = 32;
+    
+    if ([ACFormatFactory formatConversionPCMToWAV:obj.filePath parameter:&header]) {
+        NSAlert *alert = [NSAlert new];
+        [alert addButtonWithTitle:@"OK"];
+        [alert setMessageText:@"导出完成!"];
+        [alert setAlertStyle:NSAlertStyleInformational];
+        alert.icon = [NSImage imageNamed:@"NSInfo"];
+        [alert runModal];
+        [[NSWorkspace sharedWorkspace] openFile:[obj.filePath stringByDeletingLastPathComponent]];
     }
 }
 

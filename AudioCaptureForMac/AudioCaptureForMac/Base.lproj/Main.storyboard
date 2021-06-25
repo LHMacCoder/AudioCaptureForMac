@@ -908,6 +908,17 @@
                                     <action selector="startRecord:" target="CdF-KS-ugN" id="WSV-eJ-nhy"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AUF-Z1-6kP">
+                                <rect key="frame" x="495" y="41" width="91" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="导出WAV" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EcF-xG-UKA">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="ouputWAVAciton:" target="CdF-KS-ugN" id="FME-hC-sFP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="1lK-9x-Qs9" firstAttribute="top" secondItem="mWp-HL-kAd" secondAttribute="bottom" constant="10" id="35G-qI-sh3"/>

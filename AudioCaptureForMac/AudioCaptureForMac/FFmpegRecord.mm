@@ -114,7 +114,6 @@
     NSLog(@"format: %d",params->format);
     // 每一个样本的一个声道占用多少个字节
     NSLog(@"per sample bytes: %d",av_get_bytes_per_sample((AVSampleFormat)params->format));
-    NSLog(@"per sample bytes: %d",BYTES_PER_SAMPLE);
     
     // 编码ID（可以看出采样格式）
     NSLog(@"codec id: %d",params->codec_id);

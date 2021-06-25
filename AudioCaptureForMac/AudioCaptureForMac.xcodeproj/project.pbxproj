@@ -37,6 +37,7 @@
 		88F50ED526818C3300738E2B /* FFmpegRecord.mm in Sources */ = {isa = PBXBuildFile; fileRef = 88F50ED426818C3300738E2B /* FFmpegRecord.mm */; };
 		88F50ED826818D4000738E2B /* PlayerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 88F50ED726818D4000738E2B /* PlayerViewController.mm */; };
 		88F50ED926818F0900738E2B /* SDL2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88F50EAC2681899E00738E2B /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		88F50EDC268580BC00738E2B /* ACFormatFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 88F50EDB268580BC00738E2B /* ACFormatFactory.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,6 +93,8 @@
 		88F50ED426818C3300738E2B /* FFmpegRecord.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FFmpegRecord.mm; sourceTree = "<group>"; };
 		88F50ED626818D4000738E2B /* PlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		88F50ED726818D4000738E2B /* PlayerViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PlayerViewController.mm; sourceTree = "<group>"; };
+		88F50EDA268580BC00738E2B /* ACFormatFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACFormatFactory.h; sourceTree = "<group>"; };
+		88F50EDB268580BC00738E2B /* ACFormatFactory.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ACFormatFactory.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,8 @@
 				88F50EA1268187D000738E2B /* main.m */,
 				88F50EA3268187D000738E2B /* AudioCaptureForMac.entitlements */,
 				88F50ECF26818B9600738E2B /* PrefixHeader.pch */,
+				88F50EDA268580BC00738E2B /* ACFormatFactory.h */,
+				88F50EDB268580BC00738E2B /* ACFormatFactory.mm */,
 			);
 			path = AudioCaptureForMac;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88F50ED826818D4000738E2B /* PlayerViewController.mm in Sources */,
+				88F50EDC268580BC00738E2B /* ACFormatFactory.mm in Sources */,
 				88F50ECE26818B5F00738E2B /* AudioPCMObject.m in Sources */,
 				88F50E9A268187CB00738E2B /* ViewController.mm in Sources */,
 				88F50EA2268187D000738E2B /* main.m in Sources */,

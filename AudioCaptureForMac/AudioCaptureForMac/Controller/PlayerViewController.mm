@@ -233,6 +233,10 @@ typedef struct {
         if (buffer.len > 0 || _pause) continue;
         
         if (fread(data, BUFFER_SIZE, 1, _fp) == 0) {
+            // 剩余的样本数量，等待播放完全结束
+            int samples = buffer.pullLen / BYTES_PER_SAMPLE;
+            int ms = samples * 1000 / SAMPLE_RATE;
+            SDL_Delay(ms);
             break;
         }
         buffer.len = BUFFER_SIZE;
